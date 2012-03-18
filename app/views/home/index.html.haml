@@ -1,0 +1,9 @@
+:plain
+  <script type="text/x-handlebars">
+  {{ view App.ListPostsView }}
+  </script>
+
+:javascript
+  $(function() {
+    App.postsController.findAll();
+  });

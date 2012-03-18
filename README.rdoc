@@ -12,6 +12,7 @@ of new technologies including ember.js and MongoDB on a Rails 3.2 base.
 * {haml}[http://haml-lang.com/]
 * {ember.js}[http://emberjs.com/]
 * {ember-rails}[https://github.com/emberjs/ember-rails]
+* {ember-rest}[https://github.com/cerebris/ember-rest]
 
 
 == Getting started
