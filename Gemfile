@@ -23,6 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'ember-rails'
 
 # use thin instead of WEBrick
 gem 'thin'
