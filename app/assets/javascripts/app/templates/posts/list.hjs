@@ -1,4 +1,28 @@
-Posts (ember.js mode)
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<a class="btn btn-navbar" href="#" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</a>
+<a class="brand" href="#" >
+RailsEmberMongoBootstrapDemo
+</a>
+<div class="nav-collapse">
+<ul class="nav">
+<li><a href="#" {{action "showNew"}}>New Post</a></li>
+<li><a href="#" {{action "refreshListing"}}>Posts</a></li>
+<li><a href="/posts" >Switch to conventional rails view</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<section id="content" class="container-fluid">
+<div class="row-fluid">
+<div class="span12">
+<h2>Posts (ember.js mode)</h2>
 <table>
   <thead>
     <tr>
@@ -24,3 +48,6 @@ Posts (ember.js mode)
   <a href="#" {{action "showNew"}}>New Post</a>
   <a href="#" {{action "refreshListing"}}>Refresh Listing</a>
 </div>
+</div>
+</div>
+</section>
