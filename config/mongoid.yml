@@ -1,0 +1,13 @@
+development:
+  host: localhost
+  database: rembdemo_development
+
+test:
+  host: localhost
+  database: rembdemo_test
+
+# set these environment variables on your prod server
+# This is the config for heroku MongoHQ deployment:
+production:
+  uri: <%= ENV['MONGOHQ_URL'] %>
+

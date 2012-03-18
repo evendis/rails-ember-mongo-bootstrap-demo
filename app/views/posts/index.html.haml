@@ -1,0 +1,17 @@
+%h1 Listing posts
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - collection.each do |resource|
+    %tr
+      %td= link_to resource.title, resource
+      %td= link_to 'Edit', [:edit, resource]
+      %td= link_to 'Destroy', resource, confirm: 'Are you sure?', method: :delete
+
+%br
+
+= link_to 'New Post', new_post_path

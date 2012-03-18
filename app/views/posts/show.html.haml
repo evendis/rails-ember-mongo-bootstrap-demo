@@ -1,0 +1,9 @@
+#notice= notice
+
+.post
+  %h2= resource.title
+  .body
+    = resource.body
+
+= link_to 'Edit', [:edit,resource]
+= link_to 'Back', collection_path

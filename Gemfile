@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'bundler', '~> 1.1.1'
+gem 'rake', '~> 0.9.2.2'
+
 gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
@@ -21,17 +24,27 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# use thin instead of WEBrick
+gem 'thin'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+# MongoDB..
+gem 'bson_ext'
+gem 'mongoid'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+# inherited_resources: for controllers with less code
+gem 'inherited_resources'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+# haml: mmmm, less <%%>s
+gem 'haml'
+
+group :development, :test do
+  gem 'rspec-rails', '2.8.1'
+  gem 'webrat', '0.7.3'
+  gem 'factory_girl_rails', '1.7.0'
+  gem 'rdoc', '~> 3.12'
+  gem "database_cleaner"
+  gem "mongoid-rspec"
+end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
