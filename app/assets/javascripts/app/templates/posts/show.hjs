@@ -1,14 +1,15 @@
-<td>{{post._id}}</td>
+<td><span class="label label-info">{{post._id}}</span></td>
 <td class="data">
   {{#if isEditing}}
     {{view App.EditPostView}}
   {{else}}
-    {{post.title}}
+  <h3>{{post.title}}</h3>
+  <div>{{post.body}}</div>
   {{/if}}
   <div class="commands">
     {{#unless isEditing}}
-      <a href="#" {{action "showEdit"}}>Edit</a>
-      <a href="#" {{action "destroyRecord"}}>Remove</a>
+      <a href="#" class="btn" {{action "showEdit"}}>Edit</a>
+      <a href="#" class="btn btn-danger" {{action "destroyRecord"}}>Delete</a>
     {{/unless}}
   </div>
 </td>

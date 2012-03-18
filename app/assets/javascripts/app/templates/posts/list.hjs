@@ -23,7 +23,7 @@ RailsEmberMongoBootstrapDemo
 <div class="row-fluid">
 <div class="span12">
 <h2>Posts (ember.js mode)</h2>
-<table>
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>ID</th>
@@ -45,8 +45,7 @@ RailsEmberMongoBootstrapDemo
   </tbody>
 </table>
 <div class="commands">
-  <a href="#" {{action "showNew"}}>New Post</a>
-  <a href="#" {{action "refreshListing"}}>Refresh Listing</a>
+  <a href="#" class="btn btn-success" {{action "refreshListing"}}>Refresh Listing</a>
 </div>
 </div>
 </div>

@@ -1,17 +1,18 @@
-%h1 Posts (conventional Rails rendering)
+%h2 Posts (conventional Rails rendering)
 
-%table
+%table.table.table-bordered.table-striped
   %tr
-    %th
-    %th
-    %th
+    %th ID
+    %th Title
 
   - collection.each do |resource|
     %tr
-      %td= link_to resource.title, resource
-      %td= link_to 'Edit', [:edit, resource]
-      %td= link_to 'Destroy', resource, confirm: 'Are you sure?', method: :delete
+      %td
+        %span.label.label-info= resource._id
+      %td
+        %h3= resource.title
+        %div= resource.body
+        = link_to 'Edit', [:edit, resource], class: "btn"
+        = link_to 'Destroy', resource, class: "btn btn-danger", confirm: 'Are you sure?', method: :delete
 
 %br
-
-= link_to 'New Post', new_post_path
