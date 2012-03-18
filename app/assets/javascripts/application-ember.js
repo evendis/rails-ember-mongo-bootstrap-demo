@@ -15,6 +15,7 @@
 //= require twitter/bootstrap
 //= require ember
 //= require ./vendor/ember-rest
+//= require_tree ./vendor/ember-bootstrap
 //= require app/app
 //= require_tree ./app/models
 //= require_tree ./app/controllers
