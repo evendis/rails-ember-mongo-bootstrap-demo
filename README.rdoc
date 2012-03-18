@@ -7,6 +7,7 @@ of new technologies including ember.js and MongoDB on a Rails 3.2 base.
 
 * ruby 1.9.3
 * rails 3.2.2
+* CoffeeScript
 * {rspec-rails}[http://github.com/rspec/rspec-rails]
 * {mongoid}[http://github.com/mongoid/mongoid]
 * {haml}[http://haml-lang.com/]
@@ -14,7 +15,7 @@ of new technologies including ember.js and MongoDB on a Rails 3.2 base.
 * {ember.js}[http://emberjs.com/]
 * {ember-rails}[https://github.com/emberjs/ember-rails]
 * {ember-rest}[https://github.com/cerebris/ember-rest]
-* {twitter-bootstrap-rails}[https://github.com/cerebris/ember-rest]
+* {twitter-bootstrap-rails}[https://github.com/seyhunak/twitter-bootstrap-rails]
 
 
 == Getting started
@@ -27,6 +28,9 @@ Run `bundle install` to get all the required gems setup.
 To run the application, you will need mongo installed and available on default localhost
 (or modify config/mongoid.yml as required)
 
+Note hat if you hit the {project root}[http://localhost:3000/], it runs the ember version of the site.
+But if you load the {posts controller}[http://localhost:3000/posts] directly, it renders using traditional rails MVC
+(just for the purpose of comparison).
 
 == Contributing
  
